@@ -74,8 +74,8 @@ gulp.task('server', () => {
 
 // Re-runs specific tasks when certain files are changed
 gulp.task('watch', () => {
-  gulp.watch(config.paths.js, () => {
-    runSequence('lint', 'test');
+  gulp.watch([config.paths.html,config.paths.js], () => {
+    runSequence('lint', 'test','html');
   });
 });
 
