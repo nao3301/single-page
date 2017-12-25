@@ -27,17 +27,17 @@ else {
 app.use(express.static(baseDir));
 
 // API routes
-// app.get('/api/sample-route', (req, res) => {
-//   res.send({
-//     website: 'Toptal',
-//     blogPost: true
-//   });
-// });
+app.get('/api/sample-route', (req, res) => {
+  res.send({
+    website: 'Toptal',
+    blogPost: true
+  });
+});
 
 // Client routes
-// app.get('*', (req, res) => {
-//   res.sendFile(path.join(__dirname, './', baseDir, '/index.html'));
-// });
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, './', baseDir, '/index.html'));
+});
 
 app.listen(port, () => {
   open(`http://localhost:${port}`);

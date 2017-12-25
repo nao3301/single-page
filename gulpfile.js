@@ -2,6 +2,7 @@
 const gulp = require('gulp');
 const cond = require('gulp-cond');
 const eslint = require('gulp-eslint');
+const livereload = require('gulp-livereload');
 const insertLines = require('gulp-insert-lines');
 const mocha = require('gulp-mocha');
 const nodemon = require('gulp-nodemon');
@@ -56,7 +57,7 @@ gulp.task('imagemin', () =>
 gulp.task('lint', () => {
   return gulp.src(config.paths.js)
   .pipe(eslint())
-  .pipe(eslint.format())
+  .pipe(eslint.format());
 });
 
 // Unit tests
@@ -66,10 +67,13 @@ gulp.task('test', () => {
 });
 
 // Runs an Express server defined in app.js
+
 gulp.task('server', () => {
   nodemon({
     script: 'server.js'
   });
+  livereload.listen();
+  
 });
 
 // Re-runs specific tasks when certain files are changed
@@ -86,7 +90,8 @@ gulp.task('html', () => {
     before: /<\/head>$/,
     'lineBefore': '<link rel="stylesheet" href="bundle.css"/>'
   })))
-  .pipe(gulp.dest(config.paths.baseDir));
+  .pipe(gulp.dest(config.paths.baseDir))
+  .pipe(livereload());
 });
 
 // Builds the entire web app into either the dist or build folder, depending on the node environment

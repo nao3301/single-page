@@ -33,6 +33,7 @@
     "gulp-util": "^3.0.7",
     "node-sass": "^3.10.1",
     "open": "0.0.5",
+    "postcss-loader": "^2.0.9",
     "resolve-url-loader": "^1.6.0",
     "run-sequence": "^1.2.2",
     "sass-loader": "^4.0.0",
