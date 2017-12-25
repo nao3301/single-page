@@ -1,4 +1,5 @@
 /*load order matters if we use vars inside others sass files*/
+@import "base/base";
 @import "base/util";
 @import "base/colors";
 @import "abstract/variables";
@@ -8,7 +9,7 @@
 @import "base/animations";
 @import "base/typography";
 
-@import "base/base";
+
 @import "layout/grid";
 @import "layout/header";
 

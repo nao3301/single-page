@@ -27,6 +27,7 @@
     "gulp-eslint": "^3.0.1",
     "gulp-imagemin": "^4.0.0",
     "gulp-insert-lines": "0.0.4",
+    "gulp-livereload": "^3.8.1",
     "gulp-mocha": "^3.0.1",
     "gulp-nodemon": "^2.2.1",
     "gulp-util": "^3.0.7",
