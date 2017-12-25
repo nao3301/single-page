@@ -11,7 +11,7 @@ New tool chain based on gulp tasks and webpack. I tried parcel but their devserv
 * starts an express server on localhost:3000 with HMD and Sass compiling
 
 
-**npm build** runs the prod env tool chain
+**npm run build** runs the prod env tool chain
 * generates a **build** folder with webpack bundling, css extraction and image stripping
 * all bundles contain source maps and uglifying
 * runs the ***soon*** implemented test suite
