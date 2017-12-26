@@ -13,6 +13,8 @@ const PROD = process.env.NODE_ENV === 'production';
 const port = PROD ? 8080: 3000;
 const baseDir = PROD ? 'build' : 'dist';
 
+console.log("XXXXXXXXXXXXXXXXXXXXXXXXXXXX" + PROD + "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" + process.env.NODE_ENV);
+
 // Middleware
 if (PROD) {
   app.use(compression());

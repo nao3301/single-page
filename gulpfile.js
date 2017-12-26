@@ -22,6 +22,8 @@ if (argv.prod) {
 }
 let PROD = process.env.NODE_ENV === 'production';
 
+console.log("GULPXXXXXXXXXXXXXXXXXXX" + PROD + "XXXXXXXXXXXXXXXXXXXXXXXXXXX");
+
 // Configuration
 const src = 'app';
 const config = {
@@ -69,6 +71,7 @@ gulp.task('test', () => {
 // Runs an Express server defined in app.js
 
 gulp.task('server', () => {
+  console.log(PROD);
   nodemon({
     script: 'server.js'
   });
