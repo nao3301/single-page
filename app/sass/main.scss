@@ -1,10 +1,11 @@
 /*load order matters if we use vars inside others sass files*/
-@import "base/base";
+
 @import "base/util";
 @import "base/colors";
 @import "abstract/variables";
 @import "abstract/functions";
 @import "abstract/mixins";
+@import "base/base";
 
 @import "base/animations";
 @import "base/typography";
@@ -12,11 +13,13 @@
 
 @import "layout/grid";
 @import "layout/header";
+@import "layout/navigation";
 
 @import "components/button";
 @import "components/composition";
+@import "components/feature-box";
+@import "components/info-box";
+@import "components/card";
 
 
 @import "pages/home";
-
-a{color:$green};

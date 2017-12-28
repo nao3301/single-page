@@ -1,1 +1,54 @@
-a{color:brown};
+.header__banner {
+  height: auto;
+  width: 100%;
+
+  background-repeat: no-repeat;
+}
+
+.header {
+  height: 75vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($primary-sandYellow, 0.3),
+      rgba($primary-darkBlue, 0.2)
+    ),
+    url('img/TRic_Header.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  position: relative;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 65vh, 0 100%);
+
+  &__logo-box {
+    position: relative;
+    top: 4rem;
+    width: 30vw;
+    left: 2rem;
+    @include respond(tab-port) {
+        width: 50vw;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+    }
+   
+
+
+  }
+
+  &__logo {
+    width: 100%;
+    filter: invert(100%);
+   
+  }
+
+  &__text-box {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+}

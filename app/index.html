@@ -9,89 +9,291 @@
             http-equiv="X-UA-Compatible"
             content="ie=edge"
         >
-        <title>Document</title>
+        <title>TRic Photography</title>
+        <link href="https://fonts.googleapis.com/css?family=Baumans|Open+Sans|Rokkitt:100" rel="stylesheet">
     </head>
     <body>
+        <div class="navigation">
+            <input
+                type="checkbox"
+                class="navigation__checkbox"
+                id="navi-toggle"
+            >
 
-        <!-- <section>
-            <div class="row">
-                <div class="col-1-of-2">Col 1 of 2</div>
-                <div class="col-1-of-2">Col 1 of 2</div>
-             
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">Col 1 of 3</div>
-                <div class="col-1-of-3">Col 1 of 3</div>
-                <div class="col-1-of-3">Col 1 of 3</div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-3">Col 1 of 3</div>
-                <div class="col-2-of-3">Col 2 of 3</div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">Col 1 of 4</div>
-                <div class="col-1-of-4">Col 1 of 4</div>
-                <div class="col-1-of-4">Col 1 of 4</div>
-                <div class="col-1-of-4">Col 1 of 4</div>
-            </div>
-            <div class="row">
-                <div class="col-1-of-4">Col 1 of 4</div>
-                <div class="col-1-of-4">Col 1 of 4</div>
-                <div class="col-2-of-4">Col 2 of 4</div>
-            </div>
-              
-            <div class="row">
-                <div class="col-1-of-4">Col 1 of 4</div>
-                <div class="col-3-of-4">Col 3 of 4</div>
-            </div>
-              
-        </section> -->
-        <div class="item__container">
-            <article class="img-item">
-                <h3 class="hidden">In Action</h3>
-                <figure>
-                    <a
-                        href="img/portraits/img3.jpeg"
-                        data-lightbox="portraits"
-                        title="image 3"
-                    >    
-                    </a>
-                </figure>
-            </article> 
+            <label
+                for="navi-toggle"
+                class="navigation__button"
+            >
+                <span class="navigation__icon"></span>
+            </label>
+
+            <div class="navigation__background"></div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a
+                            href="#"
+                            class="navigation__link"
+                        >
+                            <span>01</span>
+                            Home
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a
+                            href="#"
+                            class="navigation__link"
+                        >
+                            <span>02</span>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a
+                            href="#"
+                            class="navigation__link"
+                        >
+                            <span>03</span>
+                            Preise
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a
+                            href="#"
+                            class="navigation__link"
+                        >
+                            <span>04</span>
+                            Über TRic
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a
+                            href="#"
+                            class="navigation__link"
+                        >
+                            <span>05</span>
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
+
+        <header class="header">
+            <div class="header__logo-box">
+
+                <img
+                    src="img/logo.svg"
+                    alt="logo"
+                    class="header__logo"
+                >
+            </div>
+
+            <div class="header__text-box">
+                <h1 class="heading-primary">
+                    <span class="heading-primary--sub">Menschen. Tiere. Natur.</span>
+                </h1>
+
+            </div>
+        </header>
 
         <main>
 
             <section class="section-about">
                 <div class="u-center-text u-margin-bottom-big">
-                    <h2 class="heading-secondary">Exciting tours for adventurous people</h2>
+                    <h2 class="heading-secondary">Punchline max 10 words</h2>
                 </div>
 
                 <div class="row">
                     <div class="col-1-of-2">
-                        <div class="icon-basic-alarm"></div>
-                        <h3 class="heading-tertiary u-margin-bottom-small">You're going to fall in love with nature</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Header with 3-7 words</h3>
                         <p class="paragraph">
-                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam eius id consequatur quia voluptates repudiandae, neque possimus vero aperiam tenetur repellat aut harum optio, architecto, minima cumque quo ratione natus.
+                            Du hast keine Lust auf gestellte Fotos im Studio? Wir auch nicht! Egal ob Hobby, Haustier oder mit der besten Freundin - bei uns wird dein Shooting zum Erlebnis.
                         </p>
-                        <h3 class="heading-tertiary u-margin-bottom-small">Love adventues like you never have before</h3>
+                        <h3 class="heading-tertiary u-margin-bottom-small">Header with 3-7 words</h3>
                         <p class="paragraph">
-                           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti reprehenderit quisquam? Perferendis nostrum cum non, expedita odit repellat natus!
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore corrupti reprehenderit quisquam? Perferendis nostrum cum non, expedita odit repellat natus!
                         </p>
-                        <a href="#" class="btn-text">Learn more &rarr;</a>
+                        <a
+                            href="#"
+                            class="btn-text"
+                        >
+                            Learn more →
+                        </a>
                     </div>
                     <div class="col-1-of-2">
                         <div class="composition">
-                            <img src="http://lorempixel.com/400/300/people/1" alt="" class="composition__photo composition__photo--p1">
-                            <img src="http://lorempixel.com/400/300/people/9" alt="" class="composition__photo composition__photo--p2">
-                            <img src="http://lorempixel.com/400/300/people/3" alt="" class="composition__photo composition__photo--p3">
+                            <img
+                                src="img/portraits/img1.jpeg"
+                                alt
+                                class="composition__photo composition__photo--p1"
+                            >
+                            <img
+                                src="img/portraits/img2.jpeg"
+                                alt
+                                class="composition__photo composition__photo--p2"
+                            >
+                            <img
+                                src="img/portraits/img3.jpeg"
+                                alt
+                                class="composition__photo composition__photo--p3"
+                            >
                         </div>
                     </div>
-                 
+
+                </div>
+            </section>
+            <section class="section-features">
+                <div class="row">
+                    <div class="info-box">
+                        <div>
+                            Du hast keine Lust auf gestellte Fotos im Studio? Wir auch nicht!
+                            <br>
+                            Egal ob Hobby, Haustier oder mit der besten Freundin - bei uns wird dein Shooting zum Erlebnis.
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="feature-box">
+                            <img
+                                class="feature-box__image"
+                                src="img/Portrait_rund_Final.png"
+                                alt
+                            >
+                            <h3 class="heading-tertiary u-margin-bottom-small">Portraits</h3>
+                            <p class="feature-box__text">
+                                Kein plan was hier für ein text hin soll kannst du dir ja was über legen...das hier wird nur ein grobes gekopieandpasted:P.
+                                <br>
+                                <br>
+                                Dann bist du bei uns genau richtig.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="feature-box">
+                            <img
+                                class="feature-box__image"
+                                src="img/Tier_Start_rund_FINAL.png"
+                                alt="Tiere"
+                            >
+                            <h3 class="heading-tertiary u-margin-bottom-small">Tiere</h3>
+                            <p class="feature-box__text">
+                                Du liebst deinen vierbeinigen Freund, er ist dein treuester Begleiter und du möchtest das gerne professionell festhalten lassen?
+                                <br>
+                                <br>
+                                Dann bist du bei uns genau richtig.
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="feature-box">
+                            <img
+                                class="feature-box__image"
+                                src="img/Action-placeholder.png"
+                                alt="Action"
+                            >
+                            <h3 class="heading-tertiary u-margin-bottom-small">Action</h3>
+                            <p class="feature-box__text">
+                                Liebst dein Hobby weil es dich mit Glück erfüllt und du möchtest genau den Moment für die Ewigkeit festhalten?
+                                <br>
+                                <br>
+                                Dann bist du bei uns genau richtig.
+                            </p>
+
+                        </div>
+                    </div>
+                </div>
+                <script src="bundle.js"></script>
+
+            </section>
+            <section class="section-pricelist">
+                <div class="u-center-text u-margin-bottom-big">
+                    <h2 class="heading-secondary">Preise</h2>
+                </div>
+                <div class="row">
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--mini"></div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--mini">mini</span>
+
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>1 Std Shooting</li>
+                                        <li>1 Location</li>
+                                        <li>5 bearbeitete Bilder 10x15</li>
+                                        <li>1 Highlight AxB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-mini">
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-standard">49,99</p>
+                                        <p class="card__price-text">Einführungspreis</p>
+                                        <p class="card__price-special">34,99€</p>
+
+                                        <a
+                                            href="#"
+                                            class="btn btn--blue"
+                                        >
+                                            Buchen
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--basic"></div>
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--basic">Basic</span>
+                                </h4>
+                                <div class="card__details">
+                                    <ul>
+                                        <li>2 Std Shooting</li>
+                                        <li>2 Location</li>
+                                        <li>10 bearbeitete Bilder 10x15</li>
+                                        <li>3 Highlight AxB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-basic">Back</div>
+                        </div>
+                    </div>
+                    <div class="col-1-of-3">
+                        <div class="card">
+                            <div class="card__side card__side--front">
+                                <div class="card__picture card__picture--premium"></div>
+
+                                <h4 class="card__heading">
+                                    <span class="card__heading-span card__heading-span--premium">Premium</span>
+
+                                </h4>
+
+                                <div class="card__details">
+                                    <ul>
+                                        <li>3 Std Shooting</li>
+                                        <li>3 Location</li>
+                                        <li>15 bearbeitete Bilder 10x15</li>
+                                        <li>17 Highlight AxB</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card__side card__side--back card__side--back-premium">Back</div>
+                        </div>
+                    </div>
+
                 </div>
             </section>
         </main>
-        <script src="bundle.js"></script>
-
     </body>
 </html>

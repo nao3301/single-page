@@ -68,7 +68,7 @@ module.exports = {
               use: [
                 {
                   loader: 'css-loader',
-                  options: { minimize: true, sourceMap: true }
+                  options: {url:false, minimize: true, sourceMap: true }
                 },
                 {
                   loader: 'postcss-loader',
@@ -90,7 +90,7 @@ module.exports = {
               },
               {
                 loader: 'css-loader',
-                options: { sourceMap: true }
+                options: {url:false, sourceMap: true }
               },
               {
                 loader: 'postcss-loader',
