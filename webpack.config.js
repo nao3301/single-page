@@ -17,7 +17,8 @@ console.log(
 module.exports = {
   devtool: PROD ? 'source-map' : 'eval-source-map',
   entry: PROD
-    ? './app/index.js'
+    ? ['./app/index.js',
+    './app/scripts/main.js']
     : [
         'webpack-hot-middleware/client?reload=true', // reloads the page if hot module reloading fails.
         './app/index.js',
