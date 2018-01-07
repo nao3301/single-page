@@ -33,7 +33,8 @@
                 <ul class="navigation__list">
                     <li class="navigation__item">
                         <a
-                            href="#" onclick="lib.scrollToSection()"
+                            href="#"
+                            onclick="lib.scrollToSection(event,'header')"
                             class="navigation__link"
                         >
                             <span>01</span>
@@ -43,30 +44,31 @@
                     <li class="navigation__item">
                         <a
                             href="#"
+                            onclick="lib.scrollToSection(event,'section-about')"
                             class="navigation__link"
                         >
                             <span>02</span>
+                            Über TRic
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a
+                            href="#"
+                            onclick="lib.scrollToSection(event,'section-features')"
+                            class="navigation__link"
+                        >
+                            <span>03</span>
                             Portfolio
                         </a>
                     </li>
                     <li class="navigation__item">
                         <a
-                            href=""
-                            onclick="lib.scrollToSection(event)"
+                            href="#"
+                            onclick="lib.scrollToSection(event,'section-pricelist')"
                             class="navigation__link"
                         >
                             <span>03</span>
                             Preise
-                        </a>
-                    </li>
-                    <li class="navigation__item">
-                        <a
-                            role = "button"
-                            onclick="lib.scrollToSection(event)"
-                            class="navigation__link"
-                        >
-                            <span>04</span>
-                            Über TRic
                         </a>
                     </li>
                     <li class="navigation__item">
@@ -82,7 +84,10 @@
             </nav>
         </div>
 
-        <header class="header">
+        <header
+            id="header"
+            class="header"
+        >
             <div class="header__logo-box">
 
                 <img
@@ -102,7 +107,10 @@
 
         <main>
 
-            <section class="section-about" id="section-about">
+            <section
+                class="section-about"
+                id="section-about"
+            >
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">Fotoshootings der besonderen Art</h2>
                 </div>
@@ -142,12 +150,15 @@
 
                 </div>
             </section>
-            <section class="section-features" id="section-features">
+            <section
+                class="section-features"
+                id="section-features"
+            >
                 <div class="row">
                     <div class="info-box">
                         <div>
                             Eine Überschrift wie:
-                            <br/>
+                            <br>
                             Portfolio
                         </div>
                     </div>
@@ -199,7 +210,10 @@
                 <script src="bundle.js"></script>
 
             </section>
-            <section class="section-pricelist" id="section-pricelist">
+            <section
+                class="section-pricelist"
+                id="section-pricelist"
+            >
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">Preise</h2>
                 </div>
@@ -217,7 +231,7 @@
                                         <li>1 Std Shooting</li>
                                         <li>1 Location</li>
                                         <li>5 bearbeitete Bilder 10x15</li>
-                                        <li>1 Highlights AxB</li>
+                                        <li>1 Highlight AxB</li>
                                     </ul>
                                 </div>
                             </div>
@@ -229,15 +243,14 @@
                                         <p class="card__price-text">Einführungspreis</p>
                                         <p class="card__price-special">34,99€</p>
 
-                                        
                                     </div>
                                 </div>
                                 <a
-                                            href="#"
-                                            class="btn btn--blue"
-                                        >
-                                            Buchen
-                                        </a>
+                                    href="#"
+                                    class="btn btn--blue"
+                                >
+                                    Buchen
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -258,22 +271,21 @@
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-basic">
-                                    <div class="card__cta">
-                                            <div class="card__price-box">
-                                                <p class="card__price-text">Nur</p>
-                                                <p class="card__price-standard">89,99</p>
-                                                <p class="card__price-text">Einführungspreis</p>
-                                                <p class="card__price-special">59,99€</p>
-        
-                                                
-                                            </div>
-                                        </div>
-                                        <a
-                                                    href="#"
-                                                    class="btn btn--blue"
-                                                >
-                                                    Buchen
-                                                </a>
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-text">Nur</p>
+                                        <p class="card__price-standard">89,99</p>
+                                        <p class="card__price-text">Einführungspreis</p>
+                                        <p class="card__price-special">59,99€</p>
+
+                                    </div>
+                                </div>
+                                <a
+                                    href="#"
+                                    class="btn btn--blue"
+                                >
+                                    Buchen
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -297,31 +309,30 @@
                                 </div>
                             </div>
                             <div class="card__side card__side--back card__side--back-premium">
-                                    <div class="card__cta">
-                                            <div class="card__price-box">
-                                                <p class="card__price-text">Nur</p>
-                                                <p class="card__price-standard">149,99</p>
-                                                <p class="card__price-text">Einführungspreis</p>
-                                                <p class="card__price-special">99,99€</p>
-        
-                                                
-                                            </div>
-                                        </div>
-                                        <a
-                                                    href="#"
-                                                    class="btn btn--blue"
-                                                >
-                                                    Buchen
-                                                </a>
+                                <div class="card__cta">
+                                    <div class="card__price-box">
+                                        <p class="card__price-text">Nur</p>
+                                        <p class="card__price-standard">149,99</p>
+                                        <p class="card__price-text">Einführungspreis</p>
+                                        <p class="card__price-special">99,99€</p>
+
+                                    </div>
+                                </div>
+                                <a
+                                    href="#"
+                                    class="btn btn--blue"
+                                >
+                                    Buchen
+                                </a>
                             </div>
                         </div>
                     </div>
 
                 </div>
                 <div class="row">
-                    <div class="info-box info-box--white" >
+                    <div class="info-box info-box--white">
                         <div>
-                            Jedes Paket ist individuell anpassbar und spezielle Wünsche sind nach Abspreche möglich. 
+                            Jedes Paket ist individuell anpassbar und spezielle Wünsche sind nach Absprache möglich.
                         </div>
                     </div>
                 </div>
