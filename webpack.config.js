@@ -20,7 +20,8 @@ module.exports = {
     ? './app/index.js'
     : [
         'webpack-hot-middleware/client?reload=true', // reloads the page if hot module reloading fails.
-        './app/index.js'
+        './app/index.js',
+        './app/scripts/main.js'
       ],
   target: 'web',
   output: {
@@ -68,7 +69,7 @@ module.exports = {
               use: [
                 {
                   loader: 'css-loader',
-                  options: {url:false, minimize: true, sourceMap: true }
+                  options: { url: false, minimize: true, sourceMap: true }
                 },
                 {
                   loader: 'postcss-loader',
@@ -79,8 +80,10 @@ module.exports = {
                     }
                   }
                 },
-                { loader: 'sass-loader',
-                 options: { sourceMap: true } }
+                {
+                  loader: 'sass-loader',
+                  options: { sourceMap: true }
+                }
               ]
             })
           : [
@@ -90,7 +93,7 @@ module.exports = {
               },
               {
                 loader: 'css-loader',
-                options: {url:false, sourceMap: true }
+                options: { url: false, sourceMap: true }
               },
               {
                 loader: 'postcss-loader',
@@ -101,8 +104,10 @@ module.exports = {
                   }
                 }
               },
-              { loader: 'sass-loader',
-               options: { sourceMap: true } }
+              {
+                loader: 'sass-loader',
+                options: { sourceMap: true }
+              }
             ]
         // ExtractTextPlugin.extract('style', 'css?sourceMap!resolve-url!sass?sourceMap') :
         // 'style!css?sourceMap!resolve-url!sass?sourceMap'

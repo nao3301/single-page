@@ -33,7 +33,7 @@
                 <ul class="navigation__list">
                     <li class="navigation__item">
                         <a
-                            href="#"
+                            href="#" onclick="lib.scrollToSection()"
                             class="navigation__link"
                         >
                             <span>01</span>
@@ -51,7 +51,8 @@
                     </li>
                     <li class="navigation__item">
                         <a
-                            href="#"
+                            href=""
+                            onclick="lib.scrollToSection(event)"
                             class="navigation__link"
                         >
                             <span>03</span>
@@ -60,7 +61,8 @@
                     </li>
                     <li class="navigation__item">
                         <a
-                            href="#"
+                            role = "button"
+                            onclick="lib.scrollToSection(event)"
                             class="navigation__link"
                         >
                             <span>04</span>
@@ -100,7 +102,7 @@
 
         <main>
 
-            <section class="section-about">
+            <section class="section-about" id="section-about">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">Punchline max 10 words</h2>
                 </div>
@@ -144,7 +146,7 @@
 
                 </div>
             </section>
-            <section class="section-features">
+            <section class="section-features" id="section-features">
                 <div class="row">
                     <div class="info-box">
                         <div>
@@ -210,7 +212,7 @@
                 <script src="bundle.js"></script>
 
             </section>
-            <section class="section-pricelist">
+            <section class="section-pricelist" id="section-pricelist">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">Preise</h2>
                 </div>
@@ -235,18 +237,20 @@
                             <div class="card__side card__side--back card__side--back-mini">
                                 <div class="card__cta">
                                     <div class="card__price-box">
+                                        <p class="card__price-text">Nur</p>
                                         <p class="card__price-standard">49,99</p>
                                         <p class="card__price-text">Einführungspreis</p>
                                         <p class="card__price-special">34,99€</p>
 
-                                        <a
+                                        
+                                    </div>
+                                </div>
+                                <a
                                             href="#"
                                             class="btn btn--blue"
                                         >
                                             Buchen
                                         </a>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -266,7 +270,24 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card__side card__side--back card__side--back-basic">Back</div>
+                            <div class="card__side card__side--back card__side--back-basic">
+                                    <div class="card__cta">
+                                            <div class="card__price-box">
+                                                <p class="card__price-text">Nur</p>
+                                                <p class="card__price-standard">89,99</p>
+                                                <p class="card__price-text">Einführungspreis</p>
+                                                <p class="card__price-special">59,99€</p>
+        
+                                                
+                                            </div>
+                                        </div>
+                                        <a
+                                                    href="#"
+                                                    class="btn btn--blue"
+                                                >
+                                                    Buchen
+                                                </a>
+                            </div>
                         </div>
                     </div>
                     <div class="col-1-of-3">
@@ -288,7 +309,24 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card__side card__side--back card__side--back-premium">Back</div>
+                            <div class="card__side card__side--back card__side--back-premium">
+                                    <div class="card__cta">
+                                            <div class="card__price-box">
+                                                <p class="card__price-text">Nur</p>
+                                                <p class="card__price-standard">149,99</p>
+                                                <p class="card__price-text">Einführungspreis</p>
+                                                <p class="card__price-special">99,99€</p>
+        
+                                                
+                                            </div>
+                                        </div>
+                                        <a
+                                                    href="#"
+                                                    class="btn btn--blue"
+                                                >
+                                                    Buchen
+                                                </a>
+                            </div>
                         </div>
                     </div>
 

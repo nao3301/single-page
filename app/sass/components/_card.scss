@@ -132,6 +132,7 @@
     transform: translate(-50%, -50%);
   }
   &__price-box {
+    color:$black;
     text-align: center;
     font-family: 'Rokkitt';
     letter-spacing: 5px;
@@ -149,6 +150,12 @@
   &__price-special {
     font-size: 4rem;
     font-weight: 400;
+  }
+  .btn{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%,10%);
   }
 }
 
@@ -181,7 +188,7 @@
     // FRONT SIDE STYLING
     &__cta {
       position: relative;
-      top: 0%;
+      top: 0;
       left: 0;
       transform: translate(0);
       width: 100%;
