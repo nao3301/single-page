@@ -1,7 +1,7 @@
 # single-page
 
 
-#Todo
+# Todo
 ...
 
 New tool chain based on gulp tasks and webpack. I tried parcel but their devserver currently doesnt support scss HMR. Maybe later down the road.
