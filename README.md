@@ -1,8 +1,18 @@
 # single-page
 
 
-# Todo
-...
+## Todo
+
+- Menutext disapear and apear
+- Learn mor different text and link
+- second pic in background
+- Infobox heading
+- action -> passion
+- all 3 text -> new
+- locationS
+- mini basic premium
+- footer with big contact data
+- socialmedia links
 
 New tool chain based on gulp tasks and webpack. I tried parcel but their devserver currently doesnt support scss HMR. Maybe later down the road.
 
