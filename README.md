@@ -3,8 +3,8 @@
 
 ## Todo
 
-- Menutext disapear and apear
-- Learn mor different text and link
+- Menutext disapear and apear           DONE
+- about us link
 - second pic in fixed background
 - Infobox heading
 - action -> passion                     DONE
