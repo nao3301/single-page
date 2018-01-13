@@ -57,12 +57,13 @@ body {
   }
 }
 a.nostyle:link {
+  text-decoration: none;
   color: inherit;
   cursor: pointer;
-  text-decoration: underline;
 }
 
 a.nostyle:visited {
+  text-decoration: none;
   color: inherit;
   cursor: pointer;
 }
