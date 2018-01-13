@@ -75,10 +75,10 @@
   &:link,
   &:visited {
     font-size: $default-font-size;
-    color: $primary-darkBlue;
+    color: $primary-newRed;
     display: inline-block;
     text-decoration: none;
-    border-bottom: 1px solid $primary-darkBlue;
+    border-bottom: 1px solid $primary-newRed;
     padding: 3px;
   }
   &:hover {

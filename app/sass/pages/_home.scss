@@ -1,6 +1,8 @@
+
 .section-about{
-    background-color: $lightGrey-1;
-    padding: 25rem 0 35rem 0;
+    background-color:$primary-newBrown;
+    // background-color: $lightGrey-1;
+    padding: 30rem 0 40rem 0;
     margin-top: -20vh;
     @include respond(tab-port) {
         padding: 20rem 0;
@@ -10,12 +12,9 @@
 .section-features{
     padding:20rem 0;
     margin-top: -10rem;
-    background-image: linear-gradient(
-      to right bottom,
-      rgba($primary-sandYellow, 0.3),
-      rgba($primary-darkBlue, 0.2)
-    ),
-    url('img/Header2-6139.jpg');
+    background-color: $primary-newBrown;
+    background-image: url('img/Header2-6139.jpg');
+   
     background-size: cover;
     background-position: bottom right;
     transform: skewY(-7deg);
@@ -32,7 +31,8 @@
 
 .section-pricelist{
 
-    background-color: $lightGrey-1;
+    // background-color: $lightGrey-1;
+    background-color:$primary-newBrown;
     padding: 25rem 0 15rem 0;
     margin-top: -10rem;
 

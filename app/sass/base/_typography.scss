@@ -5,7 +5,6 @@ body {
   color: $lightBlack;
 }
 
-
 .heading-primary {
   color: $white;
   text-transform: uppercase;
@@ -14,45 +13,68 @@ body {
   margin-bottom: 6rem;
 
   &--main {
-      display: block;
-      font-size: 6rem;
-      font-weight: 400;
-      letter-spacing: 3.5rem;
-
+    display: block;
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
   }
-  
+
   &--sub {
     text-transform: none;
-      display: block;
-      font-size: 5rem;
-      font-weight: 100;
-      letter-spacing: .5rem;
-      font-family: "Rokkitt";
-      line-height: 5rem;
+    display: block;
+    font-size: 5rem;
+    font-weight: 100;
+    letter-spacing: 0.5rem;
+    font-family: 'Rokkitt';
+    line-height: 5rem;
   }
 }
 
-.heading-secondary{
-  font-size: 3.5rem;
+.heading-secondary {
+  font-size: 4rem;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 400;
   display: inline-block;
-  background-image: linear-gradient(to right, $primary-sandYellow,$primary-lightBrown);
+  font-family: 'Lato';
+  // background-image: linear-gradient(to right, $primary-lightBlue, $primary-darkBlue,$primary-lightBlue);
+  background-image: linear-gradient(
+    to right,
+    $primary-newRed,
+    darken($primary-newRed, 5%)
+  );
+  // text-shadow: 1px 1px 10px rgba($black, 0.55);
   -webkit-background-clip: text;
   background-clip: text;
-  color:transparent;
+  color: transparent;
+}
+.or-spacer {
+  width: 100%;
+  position: relative;
 
+  .mask {
+    overflow: hidden;
+    height: 20px;
+    &:after {
+      content: '';
+      display: block;
+      margin: -25px auto 0;
+      width: 100%;
+      height: 25px;
+      border-radius: 125px / 12px;
+      box-shadow: 0 0 8px $primary-newRed;
+    }
+  }
 }
 
-.heading-tertiary{
+.heading-tertiary {
   font-size: $default-font-size;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.paragraph{
+.paragraph {
   font-size: $default-font-size;
-  &:not(:last-child){
+  &:not(:last-child) {
     margin-bottom: 3rem;
   }
 }

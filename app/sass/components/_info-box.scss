@@ -1,6 +1,6 @@
 .info-box{
     position: relative;
-    background-color: rgba($lightGrey-1, 0.9);
+    background-color: rgba($primary-newYellow, 0.9);
     font-size: 2rem;
     padding: 2.5rem 2.5rem 2.5rem 2.5rem;
     text-align: center;
@@ -8,6 +8,6 @@
     box-shadow: 0 1.5rem 4rem rgba($black, .15);
     text-transform: none;
     &--white {
-        background-color: $white;
+        background-color: $primary-newYellow;
     }
 }
