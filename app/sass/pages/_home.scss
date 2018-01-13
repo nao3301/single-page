@@ -19,6 +19,7 @@
     background-size: cover;
     background-position: bottom right;
     transform: skewY(-7deg);
+    background-attachment: fixed;
 
     & > *{
         transform: skewY(7deg);
