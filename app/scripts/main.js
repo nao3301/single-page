@@ -1,7 +1,7 @@
 const lib = {
   scrollToSection: function (e,ref) {
     e.preventDefault();
-    document.getElementById(ref).scrollIntoView(false);
+    document.getElementById(ref).scrollIntoView(true);
     document.getElementById('navi-toggle').checked = false;
   }
 };
