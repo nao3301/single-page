@@ -8,7 +8,7 @@
 }
 
 .section-features{
-    padding:20rem 0;
+    padding:30rem 0 20rem 0 ;
     margin-top: -10rem;
     background-image: linear-gradient(
       to right bottom,
@@ -18,11 +18,12 @@
     url('img/Header2-6139.jpg');
     background-size: cover;
     background-position: bottom right;
-    transform: skewY(-7deg);
+    // transform: skewY(-7deg);
     background-attachment: fixed;
+    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
 
     & > *{
-        transform: skewY(7deg);
+        // transform: skewY(7deg);
     }
     @include respond(tab-port) {
         padding: 10rem 0;
