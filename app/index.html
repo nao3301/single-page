@@ -157,7 +157,7 @@
                 </div>
                 <div class="row">
                     <div class="col-1-of-3">
-                        <div class="feature-box">
+                        <div class="feature-box" onclick="lib.openPopup(event,'popup')">
                             <img
                                 class="feature-box__image"
                                 src="img/Portrait_rund_Final.png"
@@ -442,6 +442,9 @@
                     close
                 </i>
             </div>
+        </div>
+        <div id="popup" class="popup" onclick="lib.closePopup(event, 'popup')">
+            <div class="popup__content" onclick="lib.childClick(event,'')"></div>
         </div>
     </body>
 </html>

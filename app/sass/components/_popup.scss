@@ -1,0 +1,19 @@
+.popup {
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($black, .8);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .3s;
+    &__content{
+        width: 75%;
+        height: 75%;
+        @include absCenter;
+        background-color: $white;
+        z-index: 10000;
+    }
+}
