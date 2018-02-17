@@ -10,7 +10,7 @@
     visibility: hidden;
     transition: all .3s;
     &__content{
-        max-width: 75%;
+        max-width: 75vw;
         max-height: 85vh;
         @include absCenter;
 
