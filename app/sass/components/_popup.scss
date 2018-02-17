@@ -19,12 +19,12 @@
             top:50%;
             transform: translateY(-50%);
             color: $white;
-            font-size: 7rem;
+            font-size: 10rem;
             &-left{
-                left: 15vw;
+                left: 5%;
             }
             &-right{
-                right:15vw;
+                right:5%;
             }
         }
     }
