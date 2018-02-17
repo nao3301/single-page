@@ -11,8 +11,8 @@
     transition: all .3s;
     &__content{
         max-width: 75vw;
+        max-height: 85vh;
         @include absCenter;
-        max-height: 75vh;
         z-index: 10000;
         &--slide{
             position: absolute;
