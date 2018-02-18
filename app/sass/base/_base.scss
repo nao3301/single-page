@@ -29,5 +29,10 @@ body{
     @include respond(tab-port) {
         padding: 0;
     }
+
+}
+
+main{
+    background-color: $white;
 }
 

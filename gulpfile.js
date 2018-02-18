@@ -97,6 +97,15 @@ gulp.task('html', () => {
   .pipe(livereload());
 });
 
+
+gulp.task('devbuild', () => {
+  runSequence('clean', 'html');
+
+  return gulp.src(config.paths.entry)
+  .pipe(webpack(require('./webpack.config')))
+  .pipe(gulp.dest(config.paths.baseDir));
+});
+
 // Builds the entire web app into either the dist or build folder, depending on the node environment
 gulp.task('build', () => {
   runSequence('clean', 'html', 'imagemin');
@@ -108,5 +117,5 @@ gulp.task('build', () => {
 
 // Default task, bundles the entire app and hosts it on an Express server
 gulp.task('default', (cb) => {
-  runSequence('lint', 'test', 'build', 'server', 'watch', cb);
+  runSequence('lint', 'test','build', 'server', 'watch', cb);
 });
