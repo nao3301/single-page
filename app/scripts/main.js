@@ -30,14 +30,20 @@ const lib = {
     // build items array
     var items = [
       {
-        src: 'img/portraits/LR_-0060.jpg',
-        w: 2000,
-        h: 1200
+        src: 'img/portraits/LR_-0349.jpg',
+        w: 4000,
+        h: 6000
       },
       {
-        src: 'img/portraits/LR_-0060.jpg',
-        w: 1200,
-        h: 900
+        src: 'img/portraits/LR_-7901.jpg',
+        w: 4016,
+        h: 6016
+
+      },
+      {
+        src: 'img/portraits/rici-7991.jpg',
+        w: 4016,
+        h: 6016
       }
     ];
 
@@ -45,13 +51,10 @@ const lib = {
     var options = {
       // optionName: 'option value'
       // for example:
-      bgOpacity: 0.7,
+      bgOpacity: 0.8,
       index: 0, // start at first slide
-      spacing: 0.05,
+      spacing: 0.02,
       clickToCloseNonZoomable: false,
-      shareButtons: [
-
-      ],
     };
 
     // Initializes and opens PhotoSwipe
