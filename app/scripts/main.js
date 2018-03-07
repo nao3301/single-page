@@ -70,17 +70,27 @@ const lib = {
     var items = [
       {
         src: 'img/tiere/LR_-0060.jpg',
-        w: 4000,
-        h: 6000
+        w: 6016,
+        h: 4016
       },
       {
         src: 'img/tiere/LR_-0893.jpg',
-        w: 4016,
-        h: 6016
+        w: 5352,
+        h: 3573
 
       },
       {
-        src: 'img/portraits/rici-7991.jpg',
+        src: 'img/tiere/LR_-0894.jpg',
+        w: 3649,
+        h: 3649
+      },
+      {
+        src: 'img/tiere/LR_-0932.jpg',
+        w: 4016,
+        h: 6016
+      },
+      {
+        src: 'img/tiere/LR_-1413.jpg',
         w: 4016,
         h: 6016
       }
@@ -108,21 +118,54 @@ const lib = {
     // build items array
     var items = [
       {
-        src: 'img/portraits/LR_-0349.jpg',
+        src: 'img/passion/LR_-0115.jpg',
         w: 4000,
         h: 6000
       },
       {
-        src: 'img/portraits/LR_-7901.jpg',
+        src: 'img/passion/LR_-0126.jpg',
         w: 4016,
         h: 6016
 
       },
       {
-        src: 'img/portraits/rici-7991.jpg',
+        src: 'img/passion/LR_-0233.jpg',
+        w: 6016,
+        h: 4016
+      },
+      {
+        src: 'img/passion/LR_-0305-2.jpg',
+        w: 6000,
+        h: 4000
+      },
+      {
+        src: 'img/passion/LR_-0638.jpg',
+        w: 6016,
+        h: 4016
+
+      },
+      {
+        src: 'img/passion/LR_-1024.jpg',
+        w: 4000,
+        h: 6000
+      },
+      {
+        src: 'img/passion/LR_-1025.jpg',
         w: 4016,
         h: 6016
-      }
+
+      },
+      {
+        src: 'img/passion/LR_-1064.jpg',
+        w: 4000,
+        h: 6000
+      },
+      {
+        src: 'img/passion/LR_-1675.jpg',
+        w: 4016,
+        h: 6016
+
+      },
     ];
 
     // define options (if needed)
