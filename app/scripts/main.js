@@ -69,11 +69,6 @@ const lib = {
     // build items array
     var items = [
       {
-        src: 'img/tiere/LR_-0060.jpg',
-        w: 6016,
-        h: 4016
-      },
-      {
         src: 'img/tiere/LR_-0893.jpg',
         w: 5352,
         h: 3573
