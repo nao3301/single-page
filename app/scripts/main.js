@@ -57,7 +57,7 @@ const lib = {
       clickToCloseNonZoomable: false,
     };
 
-    // Initializes and opens PhotoSwipe
+    // Initializes and opens PhotoSwipes
     var gallery = new PhotoSwipe(pswpElement, PhotoSwipeUI_Default, items, options);
     gallery.init();
 
