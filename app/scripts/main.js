@@ -1,5 +1,6 @@
 import PhotoSwipe from 'photoswipe';
 import PhotoSwipeUI_Default from 'photoswipe/dist/photoswipe-ui-default';
+// import { start } from 'repl';
 
 const lib = {
 
@@ -38,7 +39,11 @@ const lib = {
         src: 'img/portraits/LR_-7901.jpg',
         w: 4016,
         h: 6016
-
+      },
+      {
+        src: 'img/portraits/_DSC5762-4.jpg',
+        w: 5568,
+        h: 3712,
       },
       {
         src: 'img/portraits/rici-7991.jpg',
