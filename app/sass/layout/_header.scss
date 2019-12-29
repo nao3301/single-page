@@ -7,12 +7,13 @@
 
 .header {
   height: 75vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba($primary-sandYellow, 0.3),
-      rgba($primary-darkBlue, 0.2)
-    ),
-    url('img/Header3-0618.jpg');
+  background--color: #efbe00;
+//  background-image: linear-gradient(
+//      to right bottom,
+//      rgba($primary-sandYellow, 0.3),
+//      rgba($primary-darkBlue, 0.2)
+//    ),
+//    url('img/Header3-0618.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom right;
